@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IT Isfun</title>
+    <!--Google maps-->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center:new google.maps.LatLng(57.1185677,-2.1452731),
+                zoom:12,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+<!--Facebook-->
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header id="PageHeader">
+    <img src="batman.png" id="SiteLogo"/>
+    <h1 id="SiteTitle">IT Isfun </h1>
+</header>
+<!--Facebook-->
+<div class="fb-page"
+     data-href="https://www.facebook.com/itisfun1/"
+     data-tabs="timeline, events" data-width="400"
+     data-height="800" data-small-header="false"
+     data-adapt-container-width="true"
+     data-hide-cover="false"
+     data-show-facepile="true"></div>
+<!--Youtube video-->
+<iframe width="420" height="315"
+        src="http://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+</iframe>
+<!--Google maps-->
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html>
